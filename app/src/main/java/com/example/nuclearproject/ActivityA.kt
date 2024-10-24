@@ -14,9 +14,7 @@ class ActivityA : ComponentActivity()
     }
 
     fun onClicActivityB(v: View) {
-        val value = intent.getStringExtra("key")
         val intent = Intent(this, ActivityB::class.java)
-        intent.putExtra("key", value);
         startActivity(intent)
     }
 
