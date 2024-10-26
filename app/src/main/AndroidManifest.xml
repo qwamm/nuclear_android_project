@@ -25,9 +25,31 @@
         </activity>
         <activity
             android:name="ActivityA"
-            android:background = "@color/bgcolor"
             android:label="ActivityA"
-            android:exported="true">
+            android:exported="true"
+            android:launchMode = "standard">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ActivityB"
+            android:label="ActivityB"
+            android:exported="true"
+            android:launchMode = "standard">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ActivityC"
+            android:label="ActivityC"
+            android:exported="true"
+            android:launchMode = "standard">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
