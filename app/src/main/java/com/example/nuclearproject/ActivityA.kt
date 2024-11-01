@@ -20,7 +20,7 @@ class ActivityA : FragmentActivity()
 
     fun onClicActivityB(v: View) {
         val intent = Intent(this, ActivityB::class.java)
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_MULTIPLE_TASK)
         startActivity(intent)
     }
 

@@ -2,6 +2,7 @@ package com.example.nuclearproject
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.activity.ComponentActivity
 
@@ -10,6 +11,7 @@ class ActivityC : ComponentActivity()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_c)
+        Log.d("TAG", "С - $taskId")
     }
 
     fun onClicActivityA(v: View) {
