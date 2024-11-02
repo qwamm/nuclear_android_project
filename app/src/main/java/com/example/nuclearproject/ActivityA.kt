@@ -13,7 +13,6 @@ class ActivityA : FragmentActivity()
 {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val prev = savedInstanceState?.getString("ID")
         setContentView(R.layout.main)
         Log.d("TAG", "A - $taskId")
     }
@@ -39,9 +38,6 @@ class ActivityA : FragmentActivity()
         }
         else {
             val fragment = FragmentBB()
-            val args = Bundle()
-            args.putString("color", "#79508f2")
-            fragment.arguments = args
             transaction.add(R.id.fragment_bb, fragment)
             transaction.addToBackStack(null)
             transaction.show(fragment)
@@ -57,11 +53,6 @@ class ActivityA : FragmentActivity()
         transaction.addToBackStack(null)
         transaction.show(fragment)
         transaction.commit()
-    }
-
-    fun onSendColor(v: View)
-    {
-
     }
 
     override fun onSaveInstanceState(outState: Bundle) { // Here You have to save count value
