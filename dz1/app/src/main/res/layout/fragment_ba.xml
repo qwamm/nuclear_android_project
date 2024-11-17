@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_ba"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7950F2"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="287dp"
+        android:layout_height="97dp"
+        android:backgroundTint="#FFEB3B"
+        android:onClick="onClickFragmentBB"
+        android:text="Open Fragment BB" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:text="Fragment BA"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+</LinearLayout>
