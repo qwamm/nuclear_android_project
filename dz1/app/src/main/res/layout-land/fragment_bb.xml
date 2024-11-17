@@ -6,15 +6,6 @@
     android:background="#FFC107"
     android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="208dp"
-        android:layout_height="76dp"
-        android:background="#9C27B0"
-        android:onClick="onClickSendColor"
-        android:text="SendColor"
-        android:textAppearance="@android:style/TextAppearance.Material.Display1" />
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
